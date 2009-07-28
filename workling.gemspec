@@ -54,6 +54,9 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/derfred/workling}
   s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
   s.require_paths = ["lib"]
+  s.add_dependency('json', '>= 1.1.7' )
+  s.add_dependency('eventmachine', '>= 0.12.8')
+  s.add_dependency('right-aws', '>= 1.10.0')
   s.rubygems_version = %q{1.3.1}
   s.summary = %q{easily do background work in rails, without commiting to a particular runner. comes with starling, bj and spawn runners.}
 
